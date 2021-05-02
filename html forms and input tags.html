@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms and iput tags</title>
+    <style>
+        body {
+            /* background-color:rgb(176, 245, 234); */
+            background-image: url(https://image.shutterstock.com/image-photo/beautiful-landscape-mountain-layer-morning-260nw-753385105.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size:cover;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>fil the below form:</h3>
+    <form action="backend.php">
+
+        <label for="name">Name:</label>
+        <div>
+            <input type="text" name="my_name" id="name" placeholder="enter">
+        </div>
+        <br>
+        <label for="s.name"> Sur Name:</label>
+        <div>
+            <input type="text" name="my_surname" id="s.name" placeholder="enter">
+        </div>
+        <br>
+        <label for="emid">Email id:</label>
+        <div>
+            <input type="email" name="my_name" id="emid" placeholder="enter">
+        </div>
+        <br>
+        <label for="dob">D.O.B:</label>
+        <div>
+            <input type="date" name="my_dob" id="dob" placeholder="enter">
+        </div>
+        <br>
+        <div>
+            are you garduated ?<input type="checkbox" name="qualification" checked>
+        </div>
+        <br>
+        <label for="gen">Gender:</label>
+        <div>
+            Male<input type="radio" name="my_gender" id="gen">Female<input type="radio" name="my_gender" id="gen">
+        </div>
+        <br>
+        <div>
+            <label for="post">Select the post:</label>
+            <select name="my_post" id="post">
+                <option value="web developer" selected>web developer </option>
+                <option value="android developer">android developer</option>
+                <option value="data scientist">data scientist</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            About: <br><textarea name="my_text" id="" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div class="btn">
+            <input type="submit" value="submit now">
+
+            <input type="reset" value="reset form">
+        </div>
+
+
+
+
+
+    </form>
+</body>
+
+</html>
